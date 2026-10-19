@@ -1,0 +1,23 @@
+import { useState } from "react";
+import heroImg from "./assets/hero.png";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import "./App.css";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <button
+        type="button"
+        className="counter"
+        onClick={() => setCount((count) => count + 1)}
+      >
+        My New Count is {count}
+      </button>
+    </>
+  );
+}
+
+export default App;
